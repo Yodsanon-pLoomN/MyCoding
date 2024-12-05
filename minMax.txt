@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int a = kb.nextInt();
+		int b = kb.nextInt();
+		int max = a;
+		int min = b;
+		if(a<b) {
+			max = b;
+			min = a;
+		} 
+		System.out.println("MAX : " + max);
+		System.out.println("MIN : " + min);
+		
+		kb.close();
+	}
+}

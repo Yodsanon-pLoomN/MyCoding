@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int input = kb.nextInt();
+		if (input % 4 == 0) {
+
+			if (input % 100 == 0) {
+
+				if (input % 400 == 0) {
+					System.out.print("Leap Year");
+				} else {
+					System.out.print("Not a Leap Year");
+				}
+
+			} else {
+				System.out.print("Leap Year");
+			}
+		} else {
+			System.out.print("Not a Leap Year");
+		}
+
+		kb.close();
+	}
+}

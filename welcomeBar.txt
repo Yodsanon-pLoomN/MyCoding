@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		String name = kb.nextLine();
+		int year = kb.nextInt();
+		String excepName = "A A";
+		
+		
+		if((2021 -year < 18)&&(name.compareTo(excepName) != 0)) {
+			System.out.println("You shall not pass!");
+		}
+		else {
+			System.out.println("Welcome "+ name + " to NongGipsy Pub");
+		}
+		
+	
+		kb.close();
+	}
+}

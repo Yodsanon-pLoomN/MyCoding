@@ -1,0 +1,37 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		List<Integer> input = new ArrayList<Integer>();
+		int latest = 0;
+		do {
+
+			latest = kb.nextInt();
+			if (latest != 0) {
+				input.add(latest);
+			}
+		} while (latest != 0);
+
+		String op = kb.next().toLowerCase();
+
+		if (op.compareTo("max") == 0) {
+			 Collections.sort(input);
+			 Collections.reverse(input);
+		}
+		if (op.compareTo("min") == 0) {
+			Collections.sort(input);
+			
+		}
+
+		for (int i : input) {
+			System.out.print(i + " ");
+		}
+
+		kb.close();
+	}
+}

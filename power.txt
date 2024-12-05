@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int input = kb.nextInt();
+		int power = kb.nextInt();
+		int ans = input;
+		
+
+		for (int i = 1; i < power; i++) {
+			ans = ans*input;
+		}
+		
+		System.out.println(ans);
+		
+		kb.close();
+	}
+}

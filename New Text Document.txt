@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int input = kb.nextInt();
+		if(input >= 90) {
+			System.out.println("A");
+		}
+		else if(input >= 85) {
+			System.out.println("B+");
+		}
+		else if(input >= 80) {
+			System.out.println("B");
+		}
+		else if(input >= 75) {
+			System.out.println("C+");
+		}
+		else if(input >= 70) {
+			System.out.println("C");
+		}
+		else if(input >= 65) {
+			System.out.println("D+");
+		}
+		else if(input >= 60) {
+			System.out.println("D");
+		}
+		else{System.out.println("F");};
+		
+		
+		kb.close();
+	}
+}

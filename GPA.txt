@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		double thai = kb.nextDouble();
+		double math = kb.nextDouble();
+		double english = kb.nextDouble();
+		double science = kb.nextDouble();
+		double sport = kb.nextDouble();
+		
+		double gpa = (thai+math+english+science+sport)/5 ;
+		
+		System.out.println("THAI = " + thai);
+		System.out.println("MATH = " + math);
+		System.out.println("ENGLISH = " + english);
+		System.out.println("SCIENCE = " + science);
+		System.out.println("SPORT = " + sport);
+		System.out.println("---");
+		System.out.println("GPA = " + gpa);
+		
+		kb.close();
+	}
+}

@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int km = kb.nextInt();
+		int h = kb.nextInt();
+		
+		int kmh = km/h;
+		System.out.println(kmh + " km/h");
+		
+		kb.close();
+	}
+}

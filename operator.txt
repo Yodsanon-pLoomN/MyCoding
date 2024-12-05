@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int a = kb.nextInt();
+		int b = kb.nextInt();
+		int ans1 = a+b;
+		int ans2 = a-b;
+		int ans3 = a*b;
+		int ans4 = a/b;
+		System.out.println(a + " + " + b + " = " +ans1);
+		System.out.println(a + " - " + b + " = " +ans2);
+		System.out.println(a + " * " + b + " = " +ans3);
+		System.out.println(a + " / " + b + " = " +ans4);
+		kb.close();
+	}
+}

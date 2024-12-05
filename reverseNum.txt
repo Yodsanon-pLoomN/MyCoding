@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		int input = kb.nextInt();
+		int[] num  = new int[input];
+		for(int i = 0;i<input;i++) {
+			num[i] = kb.nextInt();
+		}
+		
+		
+	for(int i = 0;i<num.length;i++) {
+		
+		System.out.print(num[num.length-1-i] + "\n");
+	}
+		kb.close();
+	}
+}
